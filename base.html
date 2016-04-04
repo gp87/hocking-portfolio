@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+
+<!-- attempt at a pop-up-->
+
+<script>
+function myFunction() {
+    var x;
+    if (confirm("Just kidding!") == true) {
+        x = "You pressed OK!";
+    } else {
+        x = "You pressed Cancel!";
+    }
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/4-col-portfolio.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" type="text/css" href="static/style.css">
+	<title>
+	Scott Hocking
+	</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<header>
+			<nav class="navbar-fixed-top">
+				<a href="index.html"><img class="scott-logo" src="/static/lion-icon.jpg" alt="lion"></a>
+				<a class="navbar-brand" href="index.html">SCOTT HOCKING</a>	
+					<ul>
+						<span>
+					        <li><a href="cv.html">CV</a></li>
+					        <li><a href="bio.html">Bio</a></li>
+					        <li><a href="work.html">Work</a></li>
+				    	</span>	
+				    </ul>      
+			</nav>
+		</header>
+	</div>	
+			{% block content %}
+			-------------------
+			{% endblock %}
+	<div class="push"></div>
+
+	<footer>
+	<div class="row">
+	<div class="col-xs-12 col-s-12 col-md-12 col-lg-12">
+	<br><br><br>
+		<p class="footer-text">Copyright &copy; 2016 - Scott Hocking</p>
+		</div>
+		</div>
+	</footer>
+</body>
+<script src="/static/jquery.js"></script>
+</html>
